@@ -1,5 +1,5 @@
-// مثال: اگر فیلد جدیدی به نام MyNewField به Service Item Line اضافه می‌کنید
-tableextension 50603 ServiceItemLineExt extends "Service Item Line" // Table 5902
+#region CRID144 - 12032025-FIN-Automatic guarantee date
+tableextension 50603 ServiceItemLineTblExt extends "Service Item Line"
 {
     fields
     {
@@ -27,3 +27,4 @@ tableextension 50603 ServiceItemLineExt extends "Service Item Line" // Table 590
         }
     }
 }
+#endregion

@@ -1,5 +1,5 @@
-
-tableextension 50604 TrackingSpecificationExt extends "Tracking Specification"
+#region CRID144 - 12032025-FIN-Automatic guarantee date
+tableextension 50604 TrackingSpecificationTblExt extends "Tracking Specification"
 {
     fields
     {
@@ -11,13 +11,6 @@ tableextension 50604 TrackingSpecificationExt extends "Tracking Specification"
 
         }
 
-        field(50102; "Warranty Ending Date"; Date)
-        {
-            Caption = 'Warranty Ending Date';
-            FieldClass = FlowField;
-            CalcFormula = lookup("Service Item"."Warranty Date" where("Serial No." = field("Serial No.")));
-        }
-
 
         field(50101; "Selected Serial No. from SI"; Code[50])
         {
@@ -27,3 +20,4 @@ tableextension 50604 TrackingSpecificationExt extends "Tracking Specification"
         }
     }
 }
+#endregion

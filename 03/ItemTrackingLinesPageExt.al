@@ -1,4 +1,5 @@
-pageextension 50604 ItemTrackingLinesExt extends "Item Tracking Lines" // Page 5910
+#region CRID144 - 12032025-FIN-Automatic guarantee date
+pageextension 50604 ItemTrackingLinesPgeExt extends "Item Tracking Lines"
 {
     layout
     {
@@ -22,16 +23,22 @@ pageextension 50604 ItemTrackingLinesExt extends "Item Tracking Lines" // Page 5
                 Editable = false;
                 DrillDown = false;
             }
-
-
-            field("Warranty Ending Date"; Rec."Warranty Ending Date")
-            {
-                ApplicationArea = All;
-                Caption = 'Warranty Ending Date';
-                ToolTip = 'Shows the base description from the Item table.';
-                Editable = false;
-                DrillDown = false;
-            }
         }
     }
+
+
+    trigger OnAfterGetCurrRecord()
+    var
+        ServiceItemRecord: Record "Service Item";
+    begin
+        ServiceItemRecord.SetRange("Serial No.", Rec."Serial No.");
+        if (ServiceItemRecord.FindFirst()) then begin
+
+            Rec."Expiration Date" := ServiceItemRecord."Warranty Date";
+
+
+        end
+    end;
+
 }
+#endregion

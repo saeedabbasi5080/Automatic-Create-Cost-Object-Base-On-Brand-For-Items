@@ -1,4 +1,5 @@
-pageextension 50603 ServiceItemWorksheetExt extends "Service Order Subform" // Page 5910
+#region CRID144 - 12032025-FIN-Automatic guarantee date
+pageextension 50603 ServiceItemWorksheetPgeExt extends "Service Order Subform"
 {
     layout
     {
@@ -34,27 +35,5 @@ pageextension 50603 ServiceItemWorksheetExt extends "Service Order Subform" // P
             }
         }
     }
-
-    // var
-    //     ItemRec: Record "Service Item Line"; // متغیر برای نگهداری رکورد Item
-    //                                          // MyFieldIsVisible: Boolean; // مثال برای کنترل نمایش
-
-    // trigger OnAfterGetRecord()
-    // begin
-
-    //     if Rec."Entry No" <> 0 then begin
-    //         if ItemRec.Get(Rec."Entry No") then begin
-
-    //         end
-    //         else begin
-    //             Clear(ItemRec); // پاک کردن متغیر اگر آیتم یافت نشد
-    //         end;
-    //     end
-    //     else begin
-    //         Clear(ItemRec);
-    //     end;
-
-    //     // مثال برای کنترل نمایش
-    //     // MyFieldIsVisible := (Rec."Response Date" <> 0D); // مثلاً فیلد ما فقط وقتی تاریخ پاسخ وجود دارد نمایش داده شود
-    // end;
 }
+#endregion
