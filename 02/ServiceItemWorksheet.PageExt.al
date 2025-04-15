@@ -10,26 +10,23 @@ pageextension 50603 ServiceItemWorksheetPgeExt extends "Service Order Subform"
             {
                 ApplicationArea = All;
                 Caption = 'Entry No';
-                ToolTip = 'This is the tooltip for my new field.';
                 Editable = false;
                 DrillDown = false;
             }
 
-            field("Serial No"; Rec."Selected Serial No. from SI")
+            field("Serial Number"; Rec."Serial Number")
             {
                 ApplicationArea = All;
-                Caption = 'Serial No';
-                ToolTip = 'Shows the base description from the Item table.';
+                Caption = 'Serial Number';
                 Editable = false;
                 DrillDown = false;
             }
 
 
-            field("Warranty Ending Date"; Rec."Warranty Ending Date")
+            field("Last Warranty Date"; Rec."Last Warranty Date")
             {
                 ApplicationArea = All;
-                Caption = 'Warranty Ending Date';
-                ToolTip = 'Shows the base description from the Item table.';
+                Caption = 'Last Warranty Date';
                 Editable = false;
                 DrillDown = false;
             }
