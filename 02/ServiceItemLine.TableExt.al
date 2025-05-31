@@ -21,6 +21,11 @@ tableextension 50603 ServiceItemLineTblExt extends "Service Item Line"
         }
 
 
+        field(50103; "Entry No Test"; Integer)
+        {
+            Caption = 'Entry No';
+        }
+
         field(50100; "Entry No"; Integer)
         {
             Caption = 'Entry No';

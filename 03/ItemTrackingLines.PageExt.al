@@ -23,6 +23,7 @@ pageextension 50604 ItemTrackingLinesPgeExt extends "Item Tracking Lines"
         }
     }
 
+
     trigger OnAfterGetCurrRecord()
     var
         ServiceItemRecord: Record "Service item line";

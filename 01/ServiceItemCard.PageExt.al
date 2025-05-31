@@ -12,7 +12,7 @@ pageextension 50600 ServiceItemCardPageExt extends "Service Item Card"
             }
             field("Serial Number"; Rec."Serial Number")
             {
-                Caption = 'Last Serial Number';
+                Caption = 'Serial Number';
                 ApplicationArea = All;
             }
             field("Last Warranty Date"; Rec."Last Warranty Date")
