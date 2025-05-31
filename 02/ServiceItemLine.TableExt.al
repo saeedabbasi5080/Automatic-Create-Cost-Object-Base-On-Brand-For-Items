@@ -42,7 +42,7 @@ tableextension 50603 ServiceItemLineTblExt extends "Service Item Line"
         }
 
 
-        field(50101; "Serial Number"; Code[50])
+        field(50107; "Serial Number main test"; Code[50])
         {
             Caption = 'Serial Number';
         }
