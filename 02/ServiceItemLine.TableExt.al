@@ -20,6 +20,16 @@ tableextension 50603 ServiceItemLineTblExt extends "Service Item Line"
             end;
         }
 
+        field(50108; "Entry No main Test"; Integer)
+        {
+            Caption = 'Entry No';
+        }
+
+        field(50109; "Last Warranty Date main Test"; Date)
+        {
+            Caption = 'Last Warranty Date';
+        }
+
 
         field(50100; "Entry No"; Integer)
         {
